@@ -2,5 +2,8 @@
   "dependencies": {
     "forge": "^2.3.0",
     "foundry": "^4.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.1"
   }
 }
