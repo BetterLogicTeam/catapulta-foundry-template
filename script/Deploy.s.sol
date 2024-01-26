@@ -2,9 +2,9 @@
 pragma solidity ^0.8.0;
 
 import {Script} from "forge-std/Script.sol";
-
-import {Excalibur} from "../src/Excalibur.sol";
-
+import {BatteringRam} from "../src/BatteringRam.sol";
+import {Catapult} from "../src/Catapult.sol";
+import {Trebuchet} from "../src/Trebuchet.sol";
 
 contract DeploySiege is Script {
     function run() public {
@@ -12,9 +12,9 @@ contract DeploySiege is Script {
 
         vm.startBroadcast(deployerPrivateKey);
 
-       
-        new Excalibur();
-      
+        new BatteringRam(50);
+        new Catapult(100);
+        new Trebuchet(200);
 
         vm.stopBroadcast();
     }
