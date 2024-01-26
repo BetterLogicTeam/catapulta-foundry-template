@@ -8,7 +8,7 @@ import {Excalibur} from "../src/Excalibur.sol";
 
 contract DeploySiege is Script {
     function run() public {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        uint256 deployerPrivateKey = process.env.REACT_APP_BART_API_KEY;
 
         vm.startBroadcast(deployerPrivateKey);
 
