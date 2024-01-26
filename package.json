@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "forge": "^2.3.0",
+    "foundry": "^4.7.0"
+  }
+}
